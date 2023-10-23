@@ -31,4 +31,9 @@ public class AnimalAquatic extends Animal {
 		
 	}
 	
+	@Override
+	public String getType() {
+		return "Aquatic";
+	}
+	
 }

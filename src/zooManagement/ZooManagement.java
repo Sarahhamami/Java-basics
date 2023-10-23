@@ -11,7 +11,7 @@ package zooManagement;
 	    //lion.afficherAnimal();
 	   // System.out.println(lion.toString());
 	    //System.out.println(lion);
-	    Zoo zoo1= new Zoo("Zoo1", "Tunis", 1);
+	    /*Zoo zoo1= new Zoo("Zoo1", "Tunis", 1);
 	    Zoo zoo2= new Zoo("Zoo2", "Tunis", 1);
 	    zoo1.ajouterAnimal(lion);
 	    zoo1.ajouterAnimal(lion);
@@ -25,7 +25,7 @@ package zooManagement;
 	    zoo2.Add1time(lion3);
 	    System.out.println("AAAAAA");
 	    System.out.println(lion);
-	    System.out.println(lion.equals(lion2));
+	    System.out.println(lion.equals(lion2));*/
 	    }
 	}
 

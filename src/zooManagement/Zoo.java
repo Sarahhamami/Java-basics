@@ -83,6 +83,20 @@ public class Zoo {
     
     }
     
+   
+    public String getType(Animal a) {
+    	return a.getType();
+    }
+    public int getNbAquatic() {
+    	int nb=0;
+    	for (int i=0; i<this.nbrCages; i++) {
+    		if (this.animals[i]!=null && this.animals[i].getType().equals("Aquatic")) {
+    			nb+=1;
+    		}
+    	}
+    	return nb;
+    }
+    
     // TODO1 getType qui va determiner dans le zoo le type de l'animal (est ce qu'il est terrestre ou aquatique) retourne String
    // TODO2 getNbAquatic va retourner le nombre d'animal aquatique seulement (int)
    

@@ -57,5 +57,9 @@ public class Animal {
 		   }else 
 		   return false; 
 	   }
+	   
+	   public String getType() {
+	    	return "Unknown";
+	    }
 	    
 }
