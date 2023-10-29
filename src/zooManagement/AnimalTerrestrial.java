@@ -20,4 +20,7 @@ public class AnimalTerrestrial extends Animal {
 	public String getType() {
 		return "Terrestrial";
 	}
+	public float getQteCons() {
+		return super.age*20;
+	}
 }

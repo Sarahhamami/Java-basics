@@ -61,5 +61,6 @@ public class Animal {
 	   public String getType() {
 	    	return "Unknown";
 	    }
+	 
 	    
 }

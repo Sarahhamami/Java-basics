@@ -82,11 +82,8 @@ public class Zoo {
     	}
     
     }
-    
-   
-    public String getType(Animal a) {
-    	return a.getType();
-    }
+ 
+    //methode avec getType
     public int getNbAquatic() {
     	int nb=0;
     	for (int i=0; i<this.nbrCages; i++) {
@@ -96,8 +93,34 @@ public class Zoo {
     	}
     	return nb;
     }
+    //methode avec instanceof
+    public int getNbAquatique() {
+    	int nb=0; 
+    	for (int i=0; i<this.nbAnimal; i++) {
+    		if (this.animals[i] instanceof AnimalAquatic) {
+    			nb+=1; 
+    		}
+    	}
+    	return nb;
+    }
     
-    // TODO1 getType qui va determiner dans le zoo le type de l'animal (est ce qu'il est terrestre ou aquatique) retourne String
-   // TODO2 getNbAquatic va retourner le nombre d'animal aquatique seulement (int)
+    public float getQteTotale() {
+    	int nb=0; 
+    	for (int i=0; i<this.nbAnimal; i++) {
+    		if (this.animals[i] instanceof AnimalAquatic) {
+    			AnimalAquatic aq=(AnimalAquatic) this.animals[i];
+    			nb+=aq.getQteConsA(); 
+    		}else {
+    			AnimalTerrestrial at=(AnimalTerrestrial) this.animals[i];
+    			nb+=at.getQteCons(); 
+    		}
+    	}
+    	return nb;
+    }
+    
+    
+    // TODO1 getQteTotale twali ma famech code edheka kol fi west zoo khtr ahna nestaamlou f hajet
+    // spécifique ll hajet eli f classe fille (age or whatever)
+   // TODO2 corriger la redéfinition de equals 
    
 }

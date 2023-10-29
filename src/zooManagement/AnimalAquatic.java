@@ -35,5 +35,8 @@ public class AnimalAquatic extends Animal {
 	public String getType() {
 		return "Aquatic";
 	}
+	public float getQteConsA() {
+		return super.age*50;
+	}
 	
 }
